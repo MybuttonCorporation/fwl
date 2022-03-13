@@ -9,7 +9,7 @@ song.current = "-none playing-"
 song.dispatcher = "none"
 //define mybutton.token()
 const token = require("./item_types/token.type")
-var botToken = new token("ODczNjI3NjY3OTIzMDc5MTg4.YQ7LKw.cS_wS_FDFOE18NkQE5Y_14XQRCc")
+var botToken = new token(Process.env.TOKEN)
 
 function fwlog(text) {
     const channel = client.channels.cache.get("875067403439063053")
